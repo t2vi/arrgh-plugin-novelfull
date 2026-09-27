@@ -1,11 +1,13 @@
+import type { PluginInfo } from 'arrgh-plugin-sdk'
+import { version } from '../package.json'
 import { setContext } from './novelfull'
 import * as nf from './novelfull'
 import type { PluginContext } from './novelfull'
 
-export const info = {
+export const info: PluginInfo = {
   id: 'novelfull',
-  version: '1.0.0',
   name: 'NovelFull',
+  version,
   default_explicit: false,
   content_types: ['novel'],
 }
